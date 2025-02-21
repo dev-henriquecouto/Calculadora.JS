@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adicionando Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/88a44b315e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body style="background-color: #426B81;" class="flex justify-center items-center h-screen">
+    <!-- Container Calculadora -->
+    <section class="max-w-sm flex flex-col justify-center items-center">
+        <!-- tittle -->
+        <H1 class="text-white flex justify-center items-center m-3 text-lg">
+            <b>Calculadora.JS</b>
+        </H1>
+
+        <div style="background-color: #D9D9D9;" class="flex flex-col rounded-lg">
+            <!-- inputs -->
+            <div class="flex flex-col m-4 gap-2">
+                <!-- numero1 -->
+                <input type="number" placeholder="1º numero" id="input-1" class="p-3 rounded-lg">
+                <!-- numero2 -->
+                <input type="number" placeholder="2º numero" id="input-2" class="p-3 rounded-lg">
+            </div>
+
+            <!-- Btns -->
+            <div class="flex flex-col m-5 gap-2 justify-center items-center">
+                <!-- btn operações -->
+                <div class="flex fles-row gap-1">
+                    <!-- soma -->
+                    <button id="btnsoma" style="background-color: #4E4E4E;" class="p-3 rounded-lg text-white w-16">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <!-- subtração -->
+                    <button id="btnsubtracao" style="background-color: #4E4E4E;" class="p-3 rounded-lg text-white w-16">
+                        <i class="fas fa-minus"></i>
+                    </button>
+
+                    <!-- divisão -->
+                    <button id="btndivisao" style="background-color: #4E4E4E;" class="p-3 rounded-lg text-white w-16">
+                        <i class="fas fa-divide"></i> 
+                    </button>
+
+                    <!-- multiplicação -->
+                    <button id="btnmultiplicacao" style="background-color: #4E4E4E;" class="p-3 rounded-lg text-white w-16">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- btn funções -->
+                <div class="flex flex-row gap-2">
+                    <!-- clear inputs -->
+                    <button id="btnclear" style="background-color: #CD644F;" class="p-3 rounded-lg text-white w-32">
+                        <b>C</b>
+                    </button>
+
+                    <!-- resultado -->
+                    <button id="btnresultado" style="background-color: #68A85C;" class="p-3 rounded-lg text-white w-32">
+                        <i class="fas fa-equals"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- input resultado -->
+            <div class="m-5">
+                <input type="text" placeholder="Resultado" id="inputresultado" class="p-3 rounded-lg w-full">
+            </div>
+        </div>
+
+        <!-- Creditos -->
+        <div class="w-64 text-center m-3 flex justify-center items-center text-xs text-white">
+            <b>Feito por Henrique Andrade Couto, com HTML/Tailwind CSS e JavaScript para ALIAR SISTEMAS.</b>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
+
